@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AURA — The Art of Coffee</title>
+  <meta name="description" content="AURA is a specialty coffee atelier in Riyadh. Single-origin beans, roasted with precision and served in an atmosphere of quiet luxury." />
+  <meta name="theme-color" content="#050505" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&family=Cinzel:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- 01 · Cinematic intro -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__center">
+      <p class="preloader__eyebrow">Specialty Coffee Atelier · Riyadh</p>
+      <div class="preloader__word">
+        <span>A</span><span>U</span><span>R</span><span>A</span>
+      </div>
+      <p class="preloader__arabic" lang="ar">فن القهوة</p>
+      <div class="preloader__bar"><span class="preloader__fill" id="preloaderFill"></span></div>
+    </div>
+    <div class="preloader__meta">
+      <span>Est. 2014</span>
+      <span class="preloader__count"><span id="preloaderCount">00</span>%</span>
+    </div>
+  </div>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor" aria-hidden="true">
+    <span class="cursor__dot"></span>
+    <span class="cursor__ring"></span>
+  </div>
+
+  <!-- 02 · Navigation -->
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#home" aria-label="AURA — home">
+      <span class="brand__name">AURA</span>
+      <span class="brand__sub">Coffee Atelier</span>
+    </a>
+
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="#home" data-cursor="hover"><span>Home</span></a></li>
+        <li class="nav__item"><a class="nav__link" href="#menu" data-cursor="hover"><span>Menu</span></a></li>
+        <li class="nav__item"><a class="nav__link" href="#story" data-cursor="hover"><span>Our Story</span></a></li>
+        <li class="nav__item"><a class="nav__link" href="#contact" data-cursor="hover"><span>Contact</span></a></li>
+      </ul>
+      <div class="nav__footer">
+        <a href="tel:+966112345678" class="nav__phone">+966 11 234 5678</a>
+        <p lang="ar" dir="rtl">الرياض · حي العليا</p>
+        <a class="btn btn--gold nav__reserve" href="#contact" data-cursor="hover">Reserve a Table</a>
+      </div>
+    </nav>
+
+    <div class="header__actions">
+      <a class="btn btn--gold magnetic" href="#contact" data-cursor="hover">
+        <span class="btn__label">Reserve a Table</span>
+        <i class="fa-solid fa-arrow-right btn__icon" aria-hidden="true"></i>
+      </a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- 03 · Hero -->
+    <section class="hero" id="home">
+      <div class="hero__media" data-parallax data-speed="10">
+        <img
+          src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2400&auto=format&fit=crop"
+          alt="Candle-lit interior of the AURA coffee atelier with dark wood and brass details"
+          fetchpriority="high" />
+      </div>
+      <div class="hero__veil" aria-hidden="true"></div>
+
+      <div class="hero__content container">
+        <p class="hero__eyebrow">
+          <span>Riyadh</span><span class="dot" aria-hidden="true"></span>
+          <span>Specialty Coffee</span><span class="dot" aria-hidden="true"></span>
+          <span lang="ar" dir="rtl">منذ ٢٠١٤</span>
+        </p>
+
+        <h1 class="hero__title">
+          <span class="mask"><span class="mask__i">The Art</span></span>
+          <span class="mask"><span class="mask__i">of <em>Coffee</em></span></span>
+        </h1>
+
+        <p class="hero__sub">Experience the finest beans, roasted to perfection.</p>
+
+        <a class="hero__link" href="#menu" data-cursor="hover">
+          <span>Discover the collection</span>
+          <span class="hero__link-line" aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div class="hero__foot container">
+        <span class="hero__coord">24.7136° N — 46.6753° E</span>
+        <a class="scroll-cue" href="#story" data-cursor="hover" aria-label="Scroll to our story">
+          <span class="scroll-cue__text">Scroll</span>
+          <span class="scroll-cue__line" aria-hidden="true"><i></i></span>
+        </a>
+        <span class="hero__hours">Open daily · 07:00 — 00:00</span>
+      </div>
+    </section>
+
+    <!-- 04 · Story -->
+    <section class="story" id="story">
+      <div class="container story__grid">
+        <div class="story__text">
+          <p class="label"><span class="label__num">01</span><span class="label__rule" aria-hidden="true"></span><span lang="ar" dir="rtl">قصتنا</span> Our Story</p>
+
+          <h2 class="display story__title">
+            <span class="mask"><span class="mask__i">A Symphony</span></span>
+            <span class="mask"><span class="mask__i">of <em>Flavors.</em></span></span>
+          </h2>
+
+          <p class="story__lead reveal">
+            Born from a single conviction — that coffee deserves the same reverence as fine wine — AURA is a quiet
+            sanctuary for those who notice the details.
+          </p>
+
+          <p class="story__body reveal">
+            We travel to the highlands of Ethiopia, Colombia and Panama to source micro-lots by hand. Each harvest is
+            roasted in small batches, cupped three times, and rested until it sings. What reaches your cup is not a
+            product, but a place, a season, a person.
+          </p>
+
+          <dl class="story__stats">
+            <div class="stat reveal">
+              <dt>Origins</dt>
+              <dd>12<span>+</span></dd>
+            </div>
+            <div class="stat reveal">
+              <dt>Roast rest</dt>
+              <dd>48<span>h</span></dd>
+            </div>
+            <div class="stat reveal">
+              <dt>Since</dt>
+              <dd>2014</dd>
+            </div>
+          </dl>
+
+          <a class="link-arrow reveal" href="#menu" data-cursor="hover">
+            <span>Explore our craft</span>
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <figure class="story__media reveal-media">
+          <div class="media" data-parallax data-speed="8">
+            <img
+              src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=1600&auto=format&fit=crop"
+              alt="Barista pouring silky milk into an espresso to create latte art"
+              loading="lazy" />
+          </div>
+          <figcaption class="story__caption">
+            <span class="story__caption-rule" aria-hidden="true"></span>
+            The pour, performed by hand — 26 seconds of precision.
+          </figcaption>
+          <span class="story__arabic" lang="ar" dir="rtl">حرفية</span>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 05 · Signature menu -->
+    <section class="menu-section" id="menu">
+      <div class="container">
+        <header class="section-head">
+          <p class="label"><span class="label__num">02</span><span class="label__rule" aria-hidden="true"></span><span lang="ar" dir="rtl">قائمتنا</span> Signature Menu</p>
+
+          <div class="section-head__row">
+            <h2 class="display">
+              <span class="mask"><span class="mask__i">The Signature</span></span>
+              <span class="mask"><span class="mask__i"><em>Collection.</em></span></span>
+            </h2>
+            <p class="section-head__note reveal">
+              Four expressions of a single obsession. Served slowly, in glass and porcelain chosen for the weight of
+              the moment.
+            </p>
+          </div>
+        </header>
+
+        <div class="bento">
+          <article class="card card--feature" data-tilt>
+            <div class="card__media">
+              <img
+                src="https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=1400&auto=format&fit=crop"
+                alt="Espresso portafilters and freshly ground coffee arranged on stone"
+                loading="lazy" />
+            </div>
+            <span class="card__index">01</span>
+            <div class="card__body">
+              <div class="card__head">
+                <h3 class="card__title">Espresso</h3>
+                <span class="card__price">18 <small>SAR</small></span>
+              </div>
+              <p class="card__desc">A 26-second extraction. Cocoa, dried fig, a long caramel finish.</p>
+              <span class="card__glyph" aria-hidden="true"><i class="fa-solid fa-mug-hot"></i></span>
+            </div>
+            <span class="card__glow" aria-hidden="true"></span>
+          </article>
+
+          <article class="card card--wide" data-tilt>
+            <div class="card__media">
+              <img
+                src="https://images.unsplash.com/photo-1534778101976-62847782c213?q=80&w=1400&auto=format&fit=crop"
+                alt="Signature latte with rosetta art on a dark walnut table"
+                loading="lazy" />
+            </div>
+            <span class="card__index">02</span>
+            <div class="card__body">
+              <div class="card__head">
+                <h3 class="card__title">Signature Latte</h3>
+                <span class="card__price">26 <small>SAR</small></span>
+              </div>
+              <p class="card__desc">House blend, micro-foam textured to silk, finished with a whisper of orange blossom.</p>
+              <span class="card__glyph" aria-hidden="true"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+            </div>
+            <span class="card__glow" aria-hidden="true"></span>
+          </article>
+
+          <article class="card" data-tilt>
+            <div class="card__media">
+              <img
+                src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?q=80&w=1200&auto=format&fit=crop"
+                alt="Cold brew coffee served over clear ice in a tall glass"
+                loading="lazy" />
+            </div>
+            <span class="card__index">03</span>
+            <div class="card__body">
+              <div class="card__head">
+                <h3 class="card__title">Cold Brew</h3>
+                <span class="card__price">24 <small>SAR</small></span>
+              </div>
+              <p class="card__desc">Steeped 18 hours. Black cherry, maple, immaculate clarity.</p>
+              <span class="card__glyph" aria-hidden="true"><i class="fa-solid fa-snowflake"></i></span>
+            </div>
+            <span class="card__glow" aria-hidden="true"></span>
+          </article>
+
+          <article class="card" data-tilt>
+            <div class="card__media">
+              <img
+                src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=1200&auto=format&fit=crop"
+                alt="Golden butter croissant dusted with flour on dark stone"
+                loading="lazy" />
+            </div>
+            <span class="card__index">04</span>
+            <div class="card__body">
+              <div class="card__head">
+                <h3 class="card__title">Pastries</h3>
+                <span class="card__price">22 <small>SAR</small></span>
+              </div>
+              <p class="card__desc">Laminated for three days. Cultured butter, wildflower honey.</p>
+              <span class="card__glyph" aria-hidden="true"><i class="fa-solid fa-croissant"></i></span>
+            </div>
+            <span class="card__glow" aria-hidden="true"></span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 · Gallery marquee -->
+    <section class="gallery" aria-label="AURA gallery">
+      <div class="gallery__head container">
+        <p class="label"><span class="label__num">03</span><span class="label__rule" aria-hidden="true"></span><span lang="ar" dir="rtl">لحظات</span> Inside AURA</p>
+      </div>
+
+      <div class="marquee" data-marquee data-dir="left">
+        <div class="marquee__track">
+          <figure class="marquee__item"><img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?q=80&w=1200&auto=format&fit=crop" alt="Barista at work behind the espresso bar" loading="lazy" /></figure>
+          <figure class="marquee__item"><img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1200&auto=format&fit=crop" alt="The tasting room, framed in greenery" loading="lazy" /></figure>
+          <figure class="marquee__item"><img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?q=80&w=1200&auto=format&fit=crop" alt="Freshly roasted single-origin beans" loading="lazy" /></figure>
+          <figure class="marquee__item"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop" alt="Three signature lattes raised together" loading="lazy" /></figure>
+          <figure class="marquee__item"><img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?q=80&w=1200&auto=format&fit=crop" alt="Timber tables and soft daylight in the atelier" loading="lazy" /></figure>
+          <figure class="marquee__item"><img src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?q=80&w=1200&auto=format&fit=crop" alt="Laminated dough, shaped by hand" loading="lazy" /></figure>
+        </div>
+      </div>
+
+      <div class="marquee" data-marquee data-dir="right">
+        <div class="marquee__track">
+          <figure class="marquee__item"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1200&auto=format&fit=crop" alt="Latte art among trailing plants" loading="lazy" /></figure>
+          <figure class="marquee__item"><img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?q=80&w=1200&auto=format&fit=crop" alt="The cafe terrace at dusk" loading="lazy" /></figure>
+          <figure class="marquee__item"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?q=80&w=1200&auto=format&fit=crop" alt="Iced latte poured over clear ice" loading="lazy" /></figure>
+          <figure class="marquee__item"><img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=1200&auto=format&fit=crop" alt="Warm light over the espresso bar" loading="lazy" /></figure>
+          <figure class="marquee__item"><img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?q=80&w=1200&auto=format&fit=crop" alt="French press service by the window" loading="lazy" /></figure>
+          <figure class="marquee__item"><img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=1200&auto=format&fit=crop" alt="A quiet cup in low light" loading="lazy" /></figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 07 · Footer & contact -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer__top">
+        <p class="label"><span class="label__num">04</span><span class="label__rule" aria-hidden="true"></span><span lang="ar" dir="rtl">زيارتك</span> Visit</p>
+        <div class="footer__headline">
+          <h2 class="display">
+            <span class="mask"><span class="mask__i">Reserve your</span></span>
+            <span class="mask"><span class="mask__i"><em>moment.</em></span></span>
+          </h2>
+          <a class="btn btn--gold btn--lg magnetic reveal" href="tel:+966112345678" data-cursor="hover">
+            <span class="btn__label">Reserve a Table</span>
+            <i class="fa-solid fa-arrow-right btn__icon" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__grid">
+        <div class="footer__col">
+          <h3 class="footer__label">Location</h3>
+          <address class="footer__address">
+            AURA Coffee Atelier<br />
+            Al Olaya District, King Fahd Road<br />
+            Riyadh 12211, Saudi Arabia
+          </address>
+          <p class="footer__arabic" lang="ar" dir="rtl">الرياض · حي العليا</p>
+        </div>
+
+        <div class="footer__col">
+          <h3 class="footer__label">Opening Hours</h3>
+          <dl class="hours">
+            <div><dt>Saturday — Wednesday</dt><dd>07:00 — 00:00</dd></div>
+            <div><dt>Thursday — Friday</dt><dd>08:00 — 01:00</dd></div>
+            <div><dt>Private tastings</dt><dd>By appointment</dd></div>
+          </dl>
+        </div>
+
+        <div class="footer__col footer__col--wide">
+          <h3 class="footer__label">The AURA Letter</h3>
+          <p class="footer__note">Rare lots, tasting notes and invitations. Never more than once a month.</p>
+          <form class="newsletter" id="newsletterForm" novalidate>
+            <label class="sr-only" for="newsletterEmail">Email address</label>
+            <div class="newsletter__field">
+              <input class="newsletter__input" id="newsletterEmail" name="email" type="email" placeholder="your@email.com" autocomplete="email" required />
+              <button class="newsletter__submit" type="submit" aria-label="Subscribe" data-cursor="hover">
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </button>
+            </div>
+            <p class="newsletter__msg" id="newsletterMsg" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer__bar">
+        <p class="footer__copy">© <span id="year">2026</span> AURA Coffee Atelier. All rights reserved.</p>
+        <div class="socials" aria-label="Social media">
+          <a class="social" href="#" aria-label="AURA on Instagram" data-cursor="hover"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+          <a class="social" href="#" aria-label="AURA on Facebook" data-cursor="hover"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+          <a class="social" href="#" aria-label="AURA on WhatsApp" data-cursor="hover"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+        </div>
+        <a class="footer__top-link" href="#home" data-cursor="hover">
+          Back to top <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
